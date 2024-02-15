@@ -92,7 +92,7 @@ ul {
 
 form ul > li {
     margin: 1rem;
-    width: 30rem;
+    width: clamp(20rem, 35%, 35rem);
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -121,6 +121,16 @@ input:user-invalid {
     outline: none;
 }
 
+.invalid {
+    box-shadow: 0 0 0 1px red;
+    outline: none;
+}
+
+.password-status {
+    color: rgb(187, 29, 29);
+    font-size: 0.7rem;
+}
+
 .submit {
     padding: 0 0 0 5rem;
     font-size: 1.3rem;
@@ -143,4 +153,8 @@ button {
     padding: 1rem 4rem;
     color: #f9fafb;
     font-size: 1.5rem;
+}
+
+button:disabled {
+    background-color: #3d595475;
 }

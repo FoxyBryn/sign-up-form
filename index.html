@@ -44,17 +44,18 @@
                 </li>
                 <li>
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required/>
+                    <input class="password" type="password" id="password" name="password" required/>
                 </li>
                 <li>
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required/>
+                    <input class="confirm-password" type="password" id="confirm-password" name="confirm-password" required/>
+                    <span class="password-status"></span>
                 </li>
             </ul>
         </form>
 
         <div class="submit">
-            <button type="submit" form="sign-up">Create Account</button>
+            <button id="submit" type="submit" form="sign-up">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
